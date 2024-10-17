@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jevin Fabrian Louis's Personal Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/BurntToast.jpg" type="jpg">
+</head>
+<body class="dark-mode">
+    <div class="navbar">
+        <div class="nav-brand">
+            <i class="material-icons">terminal</i> 241402058
+        </div>
+        <div id="toggle-mode" onclick="toggle_mode()" class="btn" aria-label="Toggle Theme">
+            <i class="material-icons">dark_mode</i>
+        </div>
+    </div>
+    <div class="row">
+        <div class="cols align-center">
+            <div class="card">
+                <div class="profile-picture">
+                    <img src="./assets/profile_picture.jpg" alt="Jevin Fabrian Louis">
+                </div>
+                <div class="profile-name">Jevin Fabrian Louis</div>
+                <div class="profile-text">USU - Teknologi Informasi</div>
+                <a onclick="play_se()" class="profile-btn btn-whatsapp" href='https://wa.me/62851261263830'>WhatsApp Saya</a>
+                <a onclick="play_se()" class="profile-btn btn-instagram" href='https://www.instagram.com/burnt_toast625/'>Instagram Saya</a>
+                <a onclick="play_se()" class="profile-btn btn-github" href="https://github.com/BurntToast625">GitHub Saya</a>
+                <a onclick="play_se()" class="profile-btn btn-linkedin" href="https://www.linkedin.com/in/jevin-l-248917325/">LinkedIn Saya</a>
+            </div>
+        </div>
+        <div class="cols align-center">
+            <div class="clock">
+                <div class="clock-center"></div>
+                <div class="hand hour-hand"></div>
+                <div class="hand minute-hand"></div>
+                <div class="hand second-hand"></div>
+                <div class="number one">I</div>
+                <div class="number two">II</div>
+                <div class="number three">III</div>
+                <div class="number four">IV</div>
+                <div class="number five">V</div>
+                <div class="number six">VI</div>
+                <div class="number seven">VII</div>
+                <div class="number eight">VIII</div>
+                <div class="number nine">IX</div>
+                <div class="number ten">X</div>
+                <div class="number eleven">XI</div>
+                <div class="number">XII</div>
+            </div>
+        </div>
+    </div>
+    <audio src="./assets/FingerSnap.wav" id="toggle-se"></audio>
+    <script src="./script.js"></script>
+</body>
+</html>
