@@ -1,0 +1,208 @@
+body {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    height: 150vh;
+    overflow-x: hidden;
+}   
+.platform {
+    padding: 0px;
+    margin: 0px;
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+#player {
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: rgb(0, 255, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+#p1 {
+    top: calc(30vh - 11px);
+    left: calc(20vw - 126px);
+}
+#p2 {
+    top: calc(30vh - 11px);
+    left: calc(80vw - 126px);
+}
+#p3 {
+    top: calc(55vh - 11px);
+    left: calc(20vw - 126px);
+}
+#p4 {
+    top: calc(55vh - 11px);
+    left: calc(80vw - 126px);
+}
+#p5 {
+    top: calc(30vh - 11px);
+    left: calc(50vw - 126px);
+}
+#ground {
+    padding: 0px;
+    margin: 0px;
+    width: calc(100vw - 2px);
+    height: calc(80vh - 2px);
+    position: absolute;
+    top: 70vh;
+    left: 0px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+#profile-picture {
+    position: absolute;
+    top: calc(30vh - 140px);
+    left: calc(50vw - 51px);
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    overflow: hidden;
+}
+#profile-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.profile-btn {
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    color: white;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 250px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Silkscreen", serif;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    font-weight: 100;
+}
+#btn-whatsapp {
+    background: linear-gradient(135deg, #25D366, #075E54);
+    top: calc(30vh - 71px);
+    left: calc(20vw - 126px);
+}
+#btn-instagram {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    top: calc(30vh - 71px);
+    left: calc(80vw - 126px);
+}
+#btn-github {
+    background: linear-gradient(135deg, #000000, #333333);
+    top: calc(55vh - 71px);
+    left: calc(20vw - 126px);
+}
+#btn-linkedin {
+    background: linear-gradient(135deg, #0077B5, #006097);
+    top: calc(55vh - 71px);
+    left: calc(80vw - 126px);
+}
+#e {
+    background: black;
+    margin: 0px;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 0px;
+    font-family: "Silkscreen", serif;
+    border: 5px solid rgba(255, 255, 255, 0.25);
+    font-weight: 100;
+}
+.card {
+    padding: 10px;
+    margin: 20px;
+    gap: 10px;
+    color: white;
+    display: flex;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    font-family: "Silkscreen", serif;
+}
+.left {
+    padding: 5px;
+    display: flex;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.right {
+    padding: 5px;
+    gap: 4px;
+    display: flex;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    flex-direction: column;
+}
+.title {
+    font-size: 1.5em;
+}
+.subtitle {
+    font-size: 1em;
+}
+.text {
+    font-size: 0.8em;
+}
+.image-holder {
+    width: 100px;
+    height: auto;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    overflow: hidden;
+}
+.image-holder img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+#arrow {
+    display: block;
+    position: absolute;
+    top: calc(70vh - 80px);
+    left: calc(50vw - 25px);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+#arrow img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}

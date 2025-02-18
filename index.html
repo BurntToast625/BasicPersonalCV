@@ -4,431 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>241402058 - Jevin Fabrian Louis</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./assets/BurntToast.jpg" type="jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<style>
-    body {
-        background-color: black;
-        padding: 0px;
-        margin: 0px;
-        width: 100vw;
-        height: 100vh;
-    }   
-    .platform {
-        padding: 0px;
-        margin: 0px;
-        width: 250px;
-        height: 20px;
-        position: absolute;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.25);
-    }
-    #player {
-        top: 0px;
-        left: 0px;
-        padding: 0px;
-        margin: 0px;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        background: rgb(0, 255, 0, 0.5);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.25);
-    }
-    #p1 {
-        top: calc(30vh - 11px);
-        left: calc(20vw - 126px);
-    }
-    #p2 {
-        top: calc(30vh - 11px);
-        left: calc(80vw - 126px);
-    }
-    #p3 {
-        top: calc(55vh - 11px);
-        left: calc(20vw - 126px);
-    }
-    #p4 {
-        top: calc(55vh - 11px);
-        left: calc(80vw - 126px);
-    }
-    #p5 {
-        top: calc(30vh - 11px);
-        left: calc(50vw - 126px);
-    }
-    #ground {
-        padding: 0px;
-        margin: 0px;
-        width: calc(100vw - 2px);
-        height: calc(30vh - 2px);
-        position: absolute;
-        top: 70vh;
-        left: 0px;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.25);
-    }
-    #profile-picture {
-        position: absolute;
-        top: calc(30vh - 140px);
-        left: calc(50vw - 51px);
-        width: 100px;
-        height: 100px;
-        border: 2px solid rgba(255, 255, 255, 0.25);
-        border-radius: 50%;
-        overflow: hidden;
-    }
-    #profile-picture img {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-    }
-    .profile-btn {
-        background: rgba(255, 255, 255, 0.1);
-        position: absolute;
-        color: white;
-        display: flex;
-        margin: 0px;
-        padding: 0px;
-        width: 250px;
-        height: 60px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 8px;
-        text-decoration: none;
-        cursor: pointer;
-        font-family: "Silkscreen", serif;
-        border: 1px solid rgba(255, 255, 255, 0.25);
-        font-weight: 100;
-    }
-    #btn-whatsapp {
-        background: linear-gradient(135deg, #25D366, #075E54);
-        top: calc(30vh - 71px);
-        left: calc(20vw - 126px);
-    }
-    #btn-instagram {
-        background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
-        top: calc(30vh - 71px);
-        left: calc(80vw - 126px);
-    }
-    #btn-github {
-        background: linear-gradient(135deg, #000000, #333333);
-        top: calc(55vh - 71px);
-        left: calc(20vw - 126px);
-    }
-    #btn-linkedin {
-        background: linear-gradient(135deg, #0077B5, #006097);
-        top: calc(55vh - 71px);
-        left: calc(80vw - 126px);
-    }
-    #e {
-        background: black;
-        margin: 0px;
-        padding: 0px;
-        width: 20px;
-        height: 20px;
-        color: white;
-        position: absolute;
-        display: none;
-        top: 0px;
-        left: 0px;
-        font-family: "Silkscreen", serif;
-        border: 5px solid rgba(255, 255, 255, 0.25);
-        font-weight: 100;
-    }
-</style>
 <body>
     <a onclick="play_se()" class="profile-btn" id="btn-whatsapp" href='https://wa.me/62851261263830' target="_blank" rel="noopener noreferrer">My WhatsApp</a>
     <a onclick="play_se()" class="profile-btn" id="btn-instagram" href='https://www.instagram.com/burnt_toast625/' target="_blank" rel="noopener noreferrer">My Instagram</a>
     <a onclick="play_se()" class="profile-btn" id="btn-github" href="https://github.com/BurntToast625" target="_blank" rel="noopener noreferrer">My GitHub</a>
     <a onclick="play_se()" class="profile-btn" id="btn-linkedin" href="https://www.linkedin.com/in/jevin-l-248917325/" target="_blank" rel="noopener noreferrer">My LinkedIn</a>
+    <div id="arrow"><img src="./assets/Arrows.png"></div>
     <div class="platform" id="p1"></div>
     <div class="platform" id="p2"></div>
     <div class="platform" id="p3"></div>
     <div class="platform" id="p4"></div>
     <div class="platform" id="p5"></div>
-    <div id="profile-picture"><img src="./assets/profile_picture.jpg"></div>
-    <div id="ground"></div>
+    <div id="profile-picture"><img src="./assets/BurntToast.jpg"></div>
+    <div id="ground">
+        <div class="card">
+            <div class="left">
+                <div class="image-holder"><img src="./assets/profile_picture.jpg"></div>
+            </div>
+            <div class="right">
+                <div class="title">Jevin Fabrian Louis</div>
+                <div class="subtitle">Not-so-Developer | Python, C, HTML, CSS, JS</div>
+                <div class="text">Hello, I'm Jevin. I am a fast-learning developer with expertise in various languages. I thrive in solo projects, where I can focus on coding and problem-solving independently. My ability to quickly adapt to new challenges allows me to efficiently tackle development tasks with attention to detail. While I excel when working alone, I prefer not to engage in large collaborative team settings as it decreases my performance.</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="right" style="width: 50%;">
+                <div class="title">Bio</div>
+                <div class="subtitle">Birthdate: 01 June 2006</div>
+                <div class="subtitle">Age: 18</div>
+                <div class="subtitle">Phone: +62 852-6126-3830</div>
+                <div class="subtitle">Address: North Sumatera, Medan, Jl. Danau Singkarak Gg. Amal No. B9</div>
+            </div>
+            <div class="right" style="width: 50%;">
+                <div class="title">Education</div>
+                <div class="subtitle">SD|SMP|SMA Methodist-3</div>
+                <div class="text">2012-2024</div>
+                <div class="subtitle">Universitas Sumatera Utara</div>
+                <div class="text">2024-Now</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="right" style="width: 100%;">
+                <div class="text">Press Arrow Keys to move.</div>
+                <div class="text">Press E to interact with buttons.</div>
+            </div>
+        </div>
+    </div>
     <div id="player"></div>
     <div id="e"><center>E</center></div>
     <audio src="./assets/FingerSnap.wav" id="toggle-se"></audio>
-    <script>
-        let screen_width = window.innerWidth;
-        let screen_height = window.innerHeight;
-
-        let x = 0.5 * screen_width - 16;
-        let y = 0.7 * screen_height - 32;
-        let old_x = x;
-        let old_y = y;
-
-        // horizontal accel and velocity
-        let xa = 0.125; // X Acceleration
-        let min_xv = -8; // Min X Velocity
-        let max_xv = 8; // Max X Velocity
-        let xv = 0; // X Velocity
-
-        // vertical tweaks
-        let airborne = false;
-        let jp = -8; // Jump Power
-        let g = 0.2; // Gravity Power
-        let yv = 0; // Y Velocity 
-
-        // Platform
-        let on_p5 = false;
-        let pa = 0.05;
-        let p = 0;
-        let min_p = 0;
-        let max_p = 0.25 * screen_height;
-        let min_pv = -4;
-        let max_pv = 4;
-        let pv = 0;
-        let reversed = false;
-
-        const player = document.getElementById("player");
-        const p5 = document.getElementById("p5");
-        const profile_picture = document.getElementById("profile-picture");
-        const e = document.getElementById("e");
-        const buttons = [document.getElementById("btn-whatsapp"), document.getElementById("btn-instagram"), document.getElementById("btn-github"), document.getElementById("btn-linkedin")]
-        let platform_pos = [{x: 0.2 * screen_width - 126, y: 0.3 * screen_height - 11, w: 252, h: 22}, {x: 0.8 * screen_width - 126, y: 0.3 * screen_height - 11, w: 252, h: 22}, {x: 0.2 * screen_width - 126, y: 0.55 * screen_height - 11, w: 252, h: 22}, {x: 0.8 * screen_width - 126, y: 0.55 * screen_height - 11, w: 252, h: 22}, {x: 0.5 * screen_width - 126, y: 0.3 * screen_height - 11 + p, w: 252, h: 22}];
-        let button_pos = [{x: 0.2 * screen_width - 126, y: 0.3 * screen_height - 71, w: 252, h: 62}, {x: 0.8 * screen_width - 126, y: 0.3 * screen_height - 71, w: 252, h: 62}, {x: 0.2 * screen_width - 126, y: 0.55 * screen_height - 71, w: 252, h: 62}, {x: 0.8 * screen_width - 126, y: 0.55 * screen_height - 71, w: 252, h: 62}];
-        let button_collision = [false, false, false, false];
-
-        // Keypresses detection
-        const keys = {};
-        window.addEventListener("keydown", (e) => keys[e.key] = true);
-        window.addEventListener("keyup", (e) => keys[e.key] = false);
-
-        // E
-        let ex = 0;
-        let ey = 0;
-        let e_triggered = false;
-        document.addEventListener("keydown", handleKeyPress);
-        document.addEventListener("keyup", (event) => {
-            if (event.key === "e") {
-                e_triggered = false;
-            }
-        });
-
-        function activate_button() {
-            for (let index = 0; index < button_collision.length; index++) {
-                if (button_collision[index]) {
-                    buttons[index].click();
-                }
-            }
-        }
-
-        function handleKeyPress(event) {
-            if (event.key === "e" && !e_triggered) {
-                e_triggered = true;
-                activate_button();
-            }
-        }
-        
-        function collision(b) {
-            return (
-                x + 32 > b.x &&
-                x < b.x + b.w &&
-                y + 32 > b.y &&
-                y < b.y + b.h
-            )
-        }
-
-        // Platform collision :sob:
-        function left_collision(b) {
-            if (xv > 0 && old_x + 32 <= b.x && x + 32 >= b.x) { 
-                x = b.x - 32;
-                xv = 0;
-                return true;
-            }
-            return false;
-        }
-
-        function right_collision(b) {
-            if (xv < 0 && old_x >= b.x + b.w && x <= b.x + b.w) { 
-                x = b.x + b.w;
-                xv = 0;
-                return true;
-            }
-            return false;
-        }
-
-        function top_collision(b) {
-            if (yv > 0 && old_y + 32 <= b.y && y + 32 >= b.y) { 
-                y = b.y - 32;
-                yv = 0;
-                airborne = false;
-                return true;
-            }
-            return false;
-        }
-
-        function bottom_collision(b) {
-            if (yv < 0 && old_y >= b.y + b.h && y <= b.y + b.h) { 
-                y = b.y + b.h;
-                yv = 0;
-                return true;
-            }
-            return false;
-        }
-
-        function collision1(b) {
-            if (collision(b)) return top_collision(b) || left_collision(b) || right_collision(b) || bottom_collision(b);
-        }
-
-        // For P5 :skull:
-        function check_p5_collision() {
-            on_p5 = false;
-            const platformBox = platform_pos[4];
-            if (
-                x + 32 > platformBox.x &&
-                x < platformBox.x + platformBox.w &&
-                y + 32 >= platformBox.y &&
-                y + 32 <= platformBox.y + 22 &&
-                yv >= 0
-            ) {
-                y = platformBox.y - 32;
-                yv = 0;
-                airborne = false;
-                on_p5 = true;
-            }
-        }
-
-        function check_collisions() {
-            for (let platform of platform_pos) {            
-                if (collision1(platform)) {
-                    return;
-                }
-            }
-        }
-
-        function update_platform_movement() {
-            let old_p = p;
-
-            if (reversed) {
-                pv = Math.max(pv - pa, min_pv);
-            } else {
-                pv = Math.min(pv + pa, max_pv);
-            }
-
-            p += pv;
-
-            if (p >= max_p) {
-                p = max_p;
-                reversed = true;
-            } else if (p <= min_p) {
-                p = min_p;
-                reversed = false;
-            }
-
-            if (on_p5) y += p - old_p;
-            platform_pos[4] = {x: 0.5 * screen_width - 126, y: 0.3 * screen_height - 11 + p, w: 252, h: 22};
-        }
-
-        function update_player_movement() {
-            // Horizontal
-            if (keys["ArrowRight"]) {
-                if (!(xv + xa >= max_xv)) {
-                    if (xv < 0) xv += 2 * xa;
-                    else xv += xa;
-                } else {
-                    xv = max_xv;
-                }
-            }
-            if (keys["ArrowLeft"]) {
-                if (!(xv - xa <= min_xv)) {
-                    if (xv > 0) xv -= 2 * xa;
-                    else xv -= xa;
-                } else {
-                    xv = min_xv;
-                }
-            }
-            if (!(keys["ArrowLeft"] || keys["ArrowRight"]) || (keys["ArrowLeft"] && keys["ArrowRight"])) {
-                if (xv < 0) {
-                    xv = Math.min(0, xv + 2 * xa);
-                } else if (xv > 0) {
-                    xv = Math.max(xv - 2 * xa, 0);
-                }
-            }
-
-            // Vertical (I am so cooked)
-            if (keys["ArrowUp"] && !airborne) {
-                yv = jp;
-                airborne = true;
-            }
-            if (airborne) {
-                if (keys["ArrowDown"]) {
-                    yv += 2 * g;
-                } else {
-                    yv += g;
-                }
-            }
-
-            old_x = x;
-            old_y = y;
-            x += xv;
-            y += yv;
-            airborne = true;
-            check_p5_collision();
-            check_collisions();
-
-            if (x < 0) x = 0, xv = 0;
-            if (x + 32 > screen_width) x = screen_width - 32, xv = 0;
-            if (y < 0) y = 0, yv = 0;
-            if (y + 32 > 0.7 * screen_height) {
-                y = 0.7 * screen_height - 32;
-                airborne = false;
-                yv = 0;
-            }
-        }
-
-        function update_buttons() {
-            for (let index = 0; index < button_pos.length; index++) {
-                if (collision(button_pos[index])) {
-                    button_collision[index] = true;
-                } else {
-                    button_collision[index] = false;
-                }
-            }
-
-            for (let index = 0; index < button_collision.length; index++) {
-                if (button_collision[index]) {
-                    e.style.display = `block`;
-                    ex = button_pos[index].x + 0.5 * button_pos[index].w - 15;
-                    ey = button_pos[index].y - 40;
-                    break;
-                } else {
-                    e.style.display = `none`;
-                    ex = 0;
-                    ey = 0;
-                }
-            }
-        }
-        function loop() {
-            update_player_movement();
-            update_platform_movement();
-            update_buttons();
-
-            p5.style.transform = `translateY(${p}px)`;
-            profile_picture.style.transform = `translateY(${p}px)`;
-            player.style.transform = `translate(${x}px, ${y}px)`;
-            e.style.transform = `translate(${ex}px, ${ey}px)`;
-            requestAnimationFrame(loop);
-        }
-
-        function play_se() {
-            const sound_effect = document.getElementById('toggle-se').cloneNode();
-            sound_effect.volume = 0.1;
-            sound_effect.play();
-        }
-
-        requestAnimationFrame(loop);
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
